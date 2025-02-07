@@ -54,8 +54,11 @@ The app uses the following dependencies:
   dependencies:
     flutter:
       sdk: flutter
-    firebase_core: latest
-    firebase_auth: latest
-    cloud_firestore: latest
+    firebase_core: ^2.27.2
+    firebase_auth: ^4.17.3
+    firebase_storage: ^11.7.2
+    cloud_firestore: ^4.15.3
+    carousel_slider: ^5.0.0
+    shared_preferences: ^2.5.1
 ```
 
