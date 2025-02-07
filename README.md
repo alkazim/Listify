@@ -1,41 +1,61 @@
-# lisify
+# Lisifyy - Flutter E-Commerce App
 
-Lisifyy - Flutter E-Commerce App
-Lisifyy is a Flutter-based e-commerce application that allows users to browse and purchase items seamlessly. The app includes user authentication, product listing, and detailed item screens for an enhanced shopping experience.
+## Overview
+Lisifyy is a Flutter-based e-commerce application that allows users to browse, search, and view product details. The app is integrated with Firebase for authentication and Firestore for data storage. Users can sign up, log in, browse a list of items, and view detailed product information.
 
-Features
-User Authentication
-Sign up and log in with email and password
-Firebase Authentication for secure access
-Persistent login using SharedPreferences
-Home Screen
-Displays a list of available products
-Fetches and updates product details dynamically
-Product Details Screen
-Shows detailed information about each product
-Includes product images, descriptions, and pricing
-Session Management
-Saves user login state for seamless navigation
-Auto-login mechanism using SharedPreferences
-User-Friendly UI
-Clean and modern UI design
-Snackbar notifications for user actions
-Technologies Used
-Flutter
-Dart
-Firebase Authentication
-Firestore
-SharedPreferences
+## Tech Stack
+- **Frontend:** Flutter (Dart)
+- **Backend:** Firebase Authentication, Firestore Database
+- **State Management:** setState
+- **Storage:** Firebase Firestore for product data
 
-## Getting Started
+## Features
+- User authentication (Sign Up, Log In, Logout)
+- Home screen displaying a list of items from Firestore
+- Search functionality for filtering items dynamically
+- Detailed screen for viewing product details
+- Pagination for efficient data loading
+- Pull-to-refresh functionality
 
-This project is a starting point for a Flutter application.
+## Installation Steps
+1. **Clone the repository**:
+   ```sh
+   git clone https://github.com/yourusername/lisifyy.git
+   cd lisifyy
+   ```
+2. **Install dependencies**:
+   ```sh
+   flutter pub get
+   ```
+3. **Set up Firebase**:
+   - Create a Firebase project in the Firebase Console.
+   - Add an Android/iOS app and download the `google-services.json` file (for Android) or `GoogleService-Info.plist` (for iOS).
+   - Place the file in the `android/app/` directory (for Android) or `ios/Runner/` directory (for iOS).
+   - Enable Firebase Authentication and Firestore Database in the Firebase Console.
+4. **Run the app**:
+   ```sh
+   flutter run
+   ```
 
-A few resources to get you started if this is your first Flutter project:
+## Project Structure
+```
+lib/
+│-- main.dart          # Entry point of the application
+│-- home_screen.dart   # Home screen displaying products
+│-- login_page.dart    # Login screen for authentication
+│-- signup_page.dart   # Signup screen for new users
+│-- detailed_screen.dart  # Product details page
+│-- firebase_options.dart # Firebase configuration
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Dependencies
+The app uses the following dependencies:
+```yaml
+  dependencies:
+    flutter:
+      sdk: flutter
+    firebase_core: latest
+    firebase_auth: latest
+    cloud_firestore: latest
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
