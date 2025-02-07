@@ -1,6 +1,31 @@
-# lisifyy
+# lisify
 
-A new Flutter project.
+Lisifyy - Flutter E-Commerce App
+Lisifyy is a Flutter-based e-commerce application that allows users to browse and purchase items seamlessly. The app includes user authentication, product listing, and detailed item screens for an enhanced shopping experience.
+
+Features
+User Authentication
+Sign up and log in with email and password
+Firebase Authentication for secure access
+Persistent login using SharedPreferences
+Home Screen
+Displays a list of available products
+Fetches and updates product details dynamically
+Product Details Screen
+Shows detailed information about each product
+Includes product images, descriptions, and pricing
+Session Management
+Saves user login state for seamless navigation
+Auto-login mechanism using SharedPreferences
+User-Friendly UI
+Clean and modern UI design
+Snackbar notifications for user actions
+Technologies Used
+Flutter
+Dart
+Firebase Authentication
+Firestore
+SharedPreferences
 
 ## Getting Started
 
